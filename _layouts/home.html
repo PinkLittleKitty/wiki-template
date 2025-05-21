@@ -1,12 +1,45 @@
 ---
 layout: default
+title: Welcome to my Wiki
 ---
 
-<div class="home">
-  <h1>{{ page.title }}</h1>
-  {{ content }}
-  
-  <p>
-    <a href="{{ '/wiki/' | relative_url }}">Go to Wiki</a>
-  </p>
+<div class="home-container">
+  <header class="hero-section">
+    <div class="hero-content">
+      <h1>{{ page.title | default: "Welcome to the Wiki!" }}</h1>
+      <p class="tagline">Your central hub for knowledge and collaboration.</p>
+      <a href="{{ '/wiki/' | relative_url }}" class="btn btn-primary">Explore the Wiki</a>
+    </div>
+  </header>
+
+  <section class="intro-section">
+    <h2>About This Wiki</h2>
+    <p>This wiki serves as a comprehensive resource for [Wiki's Topic]. Here you can find information, guides, and important documents. Feel free to explore and contribute!</p>
+    {{ content }}
+  </section>
+
+  <section class="featured-section">
+    <h2>Featured Pages</h2>
+    <div class="featured-grid">
+      <!-- Example: Manually link to a few important pages. Update these paths as needed. -->
+      <div class="featured-item">
+        <h3><a href="{{ '/wiki/getting-started/' | relative_url }}">Getting Started</a></h3>
+        <p>New to the wiki? Start here to learn the basics.</p>
+      </div>
+      <div class="featured-item">
+        <h3><a href="{{ '/wiki/key-concepts/' | relative_url }}">Key Concepts</a></h3>
+        <p>Understand the fundamental ideas behind [Your Wiki's Topic].</p>
+      </div>
+      <div class="featured-item">
+        <h3><a href="{{ '/wiki/contribution-guide/' | relative_url }}">Contribution Guide</a></h3>
+        <p>Learn how you can contribute to making this wiki better.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Ready to Dive In?</h2>
+    <p>Browse all topics and find exactly what you're looking for.</p>
+    <a href="{{ '/wiki/' | relative_url }}" class="btn btn-secondary">Go to Full Wiki Index</a>
+  </section>
 </div>
