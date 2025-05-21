@@ -1,7 +1,8 @@
 title: Patch Notes
 description: Your site description
 baseurl: ""
-url: ""
+url: "https://www.justneki.com"
+baseurl: "/wiki-template"
 
 markdown: kramdown
 theme: minima
