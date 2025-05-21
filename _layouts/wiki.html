@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="wiki-container">
+  <aside class="wiki-sidebar">
+    <h3>Wiki Pages</h3>
+    <ul>
+      <li><a href="{{ '/wiki/' | relative_url }}">Wiki Home</a></li>
+      {% assign wiki_pages = site.wiki | sort: 'title' %}
+      {% for page in wiki_pages %}
+        <li>
+          <a href="{{ page.url | relative_url }}">{{ page.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </aside>
+
+  <main class="wiki-content">
+    <h1>{{ page.title }}</h1>
+    {% if page.date %}
+    <p class="wiki-date">Last updated: {{ page.date | date: "%B %d, %Y" }}</p>
+    {% endif %}
+    
+    {{ content }}
+  </main>
+</div>

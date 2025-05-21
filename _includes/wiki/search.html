@@ -1,0 +1,31 @@
+<div class="wiki-search">
+  <input type="text" id="search-input" placeholder="Search wiki...">
+  <div id="search-results"></div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const searchInput = document.getElementById('search-input');
+  const searchResults = document.getElementById('search-results');
+  
+  searchInput.addEventListener('input', function() {
+    const query = this.value.toLowerCase();
+    
+    if (query.length < 2) {
+      searchResults.innerHTML = '';
+      return;
+    }
+    
+    const wikiLinks = document.querySelectorAll('.sidebar-nav a');
+    let results = '';
+    
+    wikiLinks.forEach(link => {
+      if (link.textContent.toLowerCase().includes(query)) {
+        results += `<a href="${link.getAttribute('href')}">${link.textContent}</a><br>`;
+      }
+    });
+    
+    searchResults.innerHTML = results || 'No results found';
+  });
+});
+</script>
