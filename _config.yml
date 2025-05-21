@@ -1,7 +1,7 @@
 title: Wiki Template
-description: Your site description
-url: "https://www.justneki.com"
+description: A simple wiki template using Jekyll
 baseurl: "/wiki-template"
+url: "https://www.justneki.com"
 
 markdown: kramdown
 theme: minima
@@ -17,3 +17,7 @@ defaults:
       type: "wiki"
     values:
       layout: "wiki"
+  - scope:
+      path: ""
+    values:
+      layout: "default"

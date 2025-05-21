@@ -7,4 +7,4 @@ title: Wiki Template
 
 Welcome to the Wiki Template. This is a demonstration of a Jekyll-based wiki system.
 
-[Go to Wiki](/wiki/)
+[Go to Wiki]({{ '/wiki/' | relative_url }})
