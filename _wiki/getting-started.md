@@ -1,107 +1,84 @@
 ---
-title: Getting Started
+title: Getting Started with This Wiki Template
 date: 2023-06-16
-categories: [Guides, Tutorials]
+categories: [Template Guide, Setup]
 featured: true
-excerpt: Learn how to get started with our project with this comprehensive guide.
+excerpt: Your first steps to setting up and using this Jekyll wiki template.
 ---
 
-# Getting Started with Our Project
+# Getting Started with This Jekyll Wiki Template
 
-This is a sample wiki page that explains how to get started with our project.
+Welcome! This guide will walk you through setting up your own wiki using this Jekyll template.
 
 ## Introduction
 
-Our project is designed to help you create beautiful and functional wikis using Jekyll. This guide will walk you through the basic setup and configuration.
+This template provides a solid foundation for creating a clean, organized, and easy-to-navigate wiki. It includes features like a dynamic table of contents, category listings, and a customizable homepage.
 
-## Prerequisites
+## Prerequisites for Using the Template
 
-Before you begin, make sure you have the following installed:
+Before you begin, make sure you have the following installed on your system:
 
-- [Ruby](https://www.ruby-lang.org/en/downloads/) (version 2.5.0 or higher)
-- [RubyGems](https://rubygems.org/pages/download)
-- [Bundler](https://bundler.io/)
-- [Git](https://git-scm.com/)
 
 ## Installation
 
-1. Clone the repository:
+1.  **Clone or Download this Template:**
    ```bash
-   git clone https://github.com/username/wiki-template.git
-   cd wiki-template
+   git clone https://github.com/PinkLittleKitty/wiki-template your-new-wiki
+   cd your-new-wiki
    ```
 
-2. Install dependencies:
-   ```bash
-   bundle install
-   ```
+## Basic Configuration
 
-3. Start the local server:
-   ```bash
-   bundle exec jekyll serve
-   ```
-
-4. Open your browser and navigate to `http://localhost:4000`
-
-## Configuration
-
-The main configuration file is `_config.yml`. Here are some important settings:
+The primary configuration file for your wiki is `_config.yml` located in the root of your project. Open it and customize these essential settings:
 
 ```yaml
-title: Your Wiki Title
-description: Your wiki description
-baseurl: "/your-repo-name"  # for GitHub Pages project sites
+title: My Awesome Wiki # The title that appears in the browser tab and site header
+description: A brief description of your wiki for search engines and meta tags.
+baseurl: "" # Important! If hosting on GitHub Pages as a project site (e.g., username.github.io/my-wiki), set this to "/my-wiki". Otherwise, leave it blank or as "/".
+url: "" # Your site's full URL (e.g., "https://username.github.io" or "https://www.myawesomewiki.com")
+
+# You can also update author details if you wish
+author:
+  name: Your Name
+  email: your.email@example.com
+  +For more details on customization, see the [[Customizing Your Wiki]] page.
 ```
 
 ### Custom Styling
 
-You can customize the appearance of your wiki by editing the CSS files in the `assets/css` directory.
+You can customize the appearance of your wiki by editing the CSS files in the assets/css directory.
 
 ## Creating Wiki Pages
 
 To create a new wiki page:
 
-1. Create a new Markdown file in the `_wiki` directory
-2. Add the required front matter:
-   ```yaml
-   ---
-   title: Your Page Title
-   date: YYYY-MM-DD
-   categories: [Category1, Category2]
-   ---
-   ```
-3. Add your content using Markdown
-
-## Advanced Features
-
-### Categories
-
-You can categorize your wiki pages by adding categories in the front matter:
+1. Create a new Markdown file in the _wiki directory -2. Add the required front matter:
 
 ```yaml
-categories: [Documentation, Tutorials]
+title: Your Page Title
+date: YYYY-MM-DD
+categories: [Category1, Category2]
+plaintext
+-3. Add your content using Markdown
+-## Advanced Features
+-### Categories
+-You can categorize your wiki pages by adding categories in the front matter:
+-yaml -categories: [Documentation, Tutorials] -
+-### Featured Pages
+-To mark a page as featured on the wiki home page, add this to the front matter:
+-yaml -featured: true - 
+
 ```
 
-### Featured Pages
+## Next Steps: 
 
-To mark a page as featured on the wiki home page, add this to the front matter:
+Creating Content:
 
-```yaml
-featured: true
-```
+Once your basic setup is complete, you'll want to start adding your own wiki pages.
+
+Learn how to create, structure, and categorize your content by reading our guide: [[Creating Wiki Pages & Content]].
 
 ## Troubleshooting
 
-If you encounter any issues, try the following:
-
-1. Make sure all dependencies are installed
-2. Check your `_config.yml` for syntax errors
-3. Verify that your Markdown files have the correct front matter
-
-## Next Steps
-
-Now that you have your wiki up and running, check out these resources:
-
-- [Markdown Guide](https://www.markdownguide.org/)
-- [Jekyll Documentation](https://jekyllrb.com/docs/)
-- [GitHub Pages Documentation](https://docs.github.com/en/pages)
+1. Double-check your _config.yml for any YAML syntax errors (indentation is key!).
+2. Verify that your Markdown files have the correct front matter
