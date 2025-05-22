@@ -14,11 +14,6 @@ Welcome! This guide will walk you through setting up your own wiki using this Je
 
 This template provides a solid foundation for creating a clean, organized, and easy-to-navigate wiki. It includes features like a dynamic table of contents, category listings, and a customizable homepage.
 
-## Prerequisites for Using the Template
-
-Before you begin, make sure you have the following installed on your system:
-
-
 ## Installation
 
 1.  **Clone or Download this Template:**
@@ -58,21 +53,29 @@ To create a new wiki page:
 title: Your Page Title
 date: YYYY-MM-DD
 categories: [Category1, Category2]
-plaintext
--3. Add your content using Markdown
--## Advanced Features
--### Categories
--You can categorize your wiki pages by adding categories in the front matter:
--yaml -categories: [Documentation, Tutorials] -
--### Featured Pages
--To mark a page as featured on the wiki home page, add this to the front matter:
--yaml -featured: true - 
 
 ```
 
-## Next Steps: 
+Add your content using Markdown
 
-Creating Content:
+## Advanced Features
+### Categories
+
+You can categorize your wiki pages by adding categories in the front matter:
+
+```yaml
+categories: [Documentation, Tutorials]
+```
+
+### Featured Pages
+
+To mark a page as featured on the wiki home page, add this to the front matter:
+
+```yaml
+featured: true
+```
+
+## Next Steps: 
 
 Once your basic setup is complete, you'll want to start adding your own wiki pages.
 
