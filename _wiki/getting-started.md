@@ -36,8 +36,9 @@ url: "" # Your site's full URL (e.g., "https://username.github.io" or "https://w
 author:
   name: Your Name
   email: your.email@example.com
-  +For more details on customization, see the [[Customizing Your Wiki]] page.
 ```
+
+For more details on customization, see the [[Customizing Your Wiki]] page.
 
 ### Custom Styling
 
