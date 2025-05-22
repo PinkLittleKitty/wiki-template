@@ -1,6 +1,6 @@
 ---
 title: Getting Started with This Wiki Template
-date: 2023-06-16
+date: 2025-05-21
 categories: [Template Guide, Setup]
 featured: true
 excerpt: Your first steps to setting up and using this Jekyll wiki template.

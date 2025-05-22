@@ -1,6 +1,6 @@
 ---
 title: Customizing Your Wiki
-date: 2023-10-27 # Or current date
+date: 2025-05-21
 categories: [Template Guide, Configuration, Styling]
 excerpt: Learn how to personalize your wiki's appearance, configuration, and layout.
 ---

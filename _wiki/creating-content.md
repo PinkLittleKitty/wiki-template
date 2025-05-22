@@ -1,6 +1,6 @@
 ---
 title: Creating Wiki Pages & Content
-date: 2023-10-27 # Current date
+date: 2025-05-21
 categories: [Template Guide, Content Creation]
 excerpt: Learn how to add new pages, write content using Markdown, and organize your wiki.
 ---
